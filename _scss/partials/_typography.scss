@@ -1,0 +1,35 @@
+*,html,p {
+  /* Set all fonts to 'native resolution' or else proxima gets fuzzy */
+  //font-weight: 400;
+  font-family:$sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-family: $sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  font-family:$sans-serif;
+  color: $base-font-color;
+  letter-spacing: -0.02em;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0;
+}
+
+p {
+  color: $base-paragraph-color;
+
+  &.helper {
+    font-size: 13px;
+    padding-top: 5px;
+  }
+}
+
+a {
+  color: $light-blue;
+}

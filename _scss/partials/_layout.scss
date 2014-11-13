@@ -1,0 +1,73 @@
+* {
+     margin:0;
+     padding: 0;
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+div[role="main"] {
+     max-width: 920px;
+     margin: 0 auto;
+     padding: 0 10px;
+}
+
+.row {
+     //@include outer-container;
+     @include clearfix;
+     .col-1 {
+          @include span-columns( 1 );
+     }
+     .col-2 {
+          @include span-columns( 2 );
+     }
+     .col-3 {
+          @include span-columns( 3 );
+     }
+     .col-4 {
+          @include span-columns( 4 );
+     }
+     .col-5 {
+          @include span-columns( 5 );
+     }
+     .col-6 {
+          @include span-columns( 6 );
+     }
+     .col-7 {
+          @include span-columns( 7 );
+     }
+     .col-8 {
+          @include span-columns( 8 );
+     }
+     .col-9 {
+          @include span-columns( 9 );
+     }
+     .col-10 {
+          @include span-columns( 10 );
+     }
+     .col-11 {
+          @include span-columns( 11 );
+     }
+     .push-1 {
+          @include shift(1);
+     }
+     .push-2 {
+          @include shift(2);
+     }
+     .push-3 {
+          @include shift(3);
+     }
+     .push-4 {
+          @include shift(4);
+     }
+     .push-5 {
+          @include shift(5);
+     }
+     .push-6 {
+          @include shift(6);
+     }
+}

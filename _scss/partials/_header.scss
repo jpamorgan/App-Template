@@ -1,0 +1,54 @@
+header {
+    background-color: white;
+    height: 101px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 0 20px 0;
+
+    #top {
+        height: 60px;
+        @include clearfix();
+        background-color: $blue;
+
+        #brand {
+            display: block;
+            float: left;
+            height: 60px;
+            padding: 10px;
+            img {
+                height: 40px;
+            }
+        }
+    }
+
+    nav {
+        height: 40px;
+        text-align: center;
+
+        a {
+            color: #737373;
+            -webkit-transition: border-color .218s;
+            transition: border-color .218s;
+            border-bottom: 2px solid transparent;
+            color: #737373;
+            display: inline-block;
+            font-size: 14px;
+            margin: 0 15px;
+            padding: 10px 0 8px;
+            text-decoration: none;
+            i {
+                margin-right: 4px;
+            }
+            &:hover {
+                border-bottom-color: $light-blue;
+                color: #262626;
+                cursor: pointer;
+            }
+            &.active {
+                border-bottom-color: $light-blue;
+                color: #262626;
+                font-weight: bold;
+            }
+        }
+    }
+}
