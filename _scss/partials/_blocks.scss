@@ -11,4 +11,17 @@
         padding: 20px;
         @include clearfix;
     }
+    .block-hero {
+        max-height: 100px;
+        overflow-y: hidden;
+        @include position( relative, 0 0 0 0 );
+        img {
+            @include border-top-radius(3px);
+            width: 100%;
+            z-index: $layer-1;
+        }
+        h2 {
+            
+        }
+    }
 }
