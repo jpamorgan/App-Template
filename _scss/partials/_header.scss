@@ -19,6 +19,29 @@ header {
                 height: 40px;
             }
         }
+        #profile {
+            display: block;
+            float: right;
+            height: 60px;
+            padding: 10px;
+            opacity: .9;
+            i {
+                height: 40px;
+                line-height: 40px;
+                display: inline-block;
+            }
+            img {
+                height: 40px;
+                @include border-top-radius(20px);
+                @include border-bottom-radius(20px);
+            }
+            &:hover {
+                opacity: 1;
+            }
+            &:active {
+                opacity: .9;
+            }
+        }
     }
 
     nav {
