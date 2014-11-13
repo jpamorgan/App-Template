@@ -1,4 +1,6 @@
 *,html,p {
+  /* Set all fonts to 'native resolution' or else proxima gets fuzzy */
+  //font-weight: 400;
   font-family:$sans-serif;
   -webkit-font-smoothing: antialiased;
   font-family: $sans-serif;
@@ -39,8 +41,4 @@ p {
 
 a {
   color: $light-blue;
-}
-
-label {
-  font-size: 15px;
 }
