@@ -19,16 +19,20 @@ header {
                 height: 40px;
             }
         }
-        #profile {
+        a#profile {
             display: block;
             float: right;
             height: 60px;
             padding: 10px 10px 10px 0;
             opacity: .9;
-            i {
+            color: lighten($blue, 30);
+            span {
+                display: block;
                 height: 40px;
                 line-height: 40px;
-                display: inline-block;
+                font-size: 13px;
+                float: left;
+                padding-right: 10px;
             }
             img {
                 height: 40px;
@@ -37,6 +41,7 @@ header {
             }
             &:hover {
                 opacity: 1;
+                color: lighten($blue, 30);
             }
             &:active {
                 opacity: .9;
