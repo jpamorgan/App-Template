@@ -41,7 +41,7 @@ header {
             }
             &:hover {
                 opacity: 1;
-                color: lighten($blue, 30);
+                color: rgba(white, .5);
             }
             &:active {
                 opacity: .9;
