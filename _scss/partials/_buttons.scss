@@ -12,8 +12,13 @@
 	background-color: $light-blue;
 	@include border-top-radius(2px);
     @include border-bottom-radius(2px);
+    outline: none;
 
     font-size: 14px;
+
+    i {
+    	margin-right: 4px;
+    }
 
     &:hover {
     	color: white;
@@ -40,5 +45,13 @@
 		&:active {
 			background-color: rgba(0, 0, 0, .1);
 		}
+    }
+
+    &.btn-disabled {
+		background-color: rgba(0, 0, 0, .1);
+		border: 1px solid rgba(0, 0, 0, .1);
+		color: #999;
+		cursor: default;
+		pointer-events: none;
     }
 }
