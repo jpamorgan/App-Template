@@ -9,5 +9,6 @@
 
     .inner {
         padding: 20px;
+        @include clearfix;
     }
 }
