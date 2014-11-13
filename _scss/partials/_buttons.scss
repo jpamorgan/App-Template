@@ -17,4 +17,7 @@
     	color: white;
 		border: 1px solid rgba(0, 0, 0, .1);
     }
+    &:active {
+    	background-color: darken($light-blue,3);
+    }
 }
