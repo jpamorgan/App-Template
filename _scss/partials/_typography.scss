@@ -23,13 +23,13 @@ h2 {
 
 p {
   color: $base-paragraph-color;
+  padding-top: 5px;
   line-height: 1.4;
   font-size: 14px;
   margin-bottom: 13px;
 
   &.helper {
     font-size: 13px;
-    padding-top: 5px;
   }
 }
 
