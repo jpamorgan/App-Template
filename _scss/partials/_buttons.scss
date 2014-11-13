@@ -1,0 +1,20 @@
+.btn {
+	display: inline-block;
+	padding: 5px 10px;
+	-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+	background-image: -webkit-linear-gradient(top,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0));
+	background-image: linear-gradient(top,transparent,transparent);
+	border: 1px solid rgba(0, 0, 0, 0);
+	color: white;
+	background-color: $light-blue;
+	@include border-top-radius(2px);
+    @include border-bottom-radius(2px);
+
+    font-size: 14px;
+
+    &:hover {
+    	color: white;
+		border: 1px solid rgba(0, 0, 0, .1);
+    }
+}
