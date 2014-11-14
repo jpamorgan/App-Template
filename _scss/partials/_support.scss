@@ -1,0 +1,103 @@
+#supportIcon {
+    z-index: $layer-3;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 25px;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    padding: 9px 0 0 12px;
+    @include border-top-radius( 2px );
+    background-color: $support-color;
+    border-bottom: 1px solid rgba(darken($support-color,5),.5);
+    cursor: pointer;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, .15);
+
+    h3 {
+        font-size: 1em;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        line-height: 40px;
+        color: white;
+        text-shadow: 0 0 1px rgba(0,0,0,0.2);
+
+        i {
+            margin-right: 4px;
+        }
+    }
+
+    &:hover {
+        background-color: darken($support-color, 3);
+        border-color: darken($support-color, 10);
+    }
+    &:active {
+        background-color: $support-color;
+        box-shadow: none
+    }
+}
+
+#support {
+    z-index: $layer-3;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 25px;
+    width: 350px;
+    background-color: white;
+    @include border-top-radius( 2px );
+
+    .supportHeader {
+        $supportHeadHeight: 35px;
+        padding: 9px 0 0 12px;
+        height: $supportHeadHeight;
+        @include border-top-radius( 2px );
+        background-color: $support-color;
+        position: relative;
+        border-bottom: 1px solid rgba(darken($support-color,5),.5);
+        cursor: pointer;
+
+        h3 {
+            font-size: 1em;
+            color: white;
+            text-shadow: 0 0 1px rgba(0,0,0,0.2);
+
+            i {
+                margin-right: 4px;
+            }
+        }
+        .close {
+            position: absolute;
+            text-align: center;
+            line-height: $supportHeadHeight;
+            right: 0px;
+            top: 0px;
+            height: $supportHeadHeight;
+            width: $supportHeadHeight;
+            background-color: rgba(0,0,0,0.1);
+            color: white;
+            text-shadow: 0 0 1px rgba(0,0,0,0.2);
+            border-left: 1px solid rgba(0,0,0,0.03);
+
+            &:hover {
+                background-color: rgba(0,0,0,0.15);
+            }
+        }
+    }
+
+    .support-inner {
+        padding: 5px;
+        background-color: white;
+        border-left: 1px solid rgba(0,0,0,.2);
+        border-right: 1px solid rgba(0,0,0,.2);
+
+        textarea {
+            padding: 5px;
+            font-size: 1em;
+            line-height: 1.2em;
+            color: #222;
+        }
+    }
+}
