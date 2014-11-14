@@ -8,7 +8,7 @@ header {
     #top {
         height: 60px;
         @include clearfix();
-        background-color: $blue;
+        background-color: $primary;
 
         #brand {
             display: block;
@@ -24,8 +24,7 @@ header {
             float: right;
             height: 60px;
             padding: 10px 10px 10px 0;
-            opacity: .9;
-            color: lighten($blue, 30);
+            color: rgba(white, .4);
             span {
                 display: block;
                 height: 40px;
@@ -40,11 +39,10 @@ header {
                 @include border-bottom-radius(20px);
             }
             &:hover {
-                opacity: 1;
                 color: rgba(white, .5);
             }
             &:active {
-                opacity: .9;
+                opacity: .8;
             }
         }
     }
@@ -68,12 +66,12 @@ header {
                 margin-right: 4px;
             }
             &:hover {
-                border-bottom-color: $light-blue;
+                border-bottom-color: $secondary;
                 color: #262626;
                 cursor: pointer;
             }
             &.active {
-                border-bottom-color: $light-blue;
+                border-bottom-color: $secondary;
                 color: #262626;
                 font-weight: bold;
             }
