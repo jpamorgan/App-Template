@@ -21,6 +21,11 @@
     i {
     	margin-right: 4px;
     }
+    &.btn-lg {
+        padding: 10px 20px;
+        font-size: 15px;
+        height: 40px;
+    }
 
     &:hover {
     	color: white;
@@ -35,18 +40,25 @@
     	display: block;
     }
 
+    &.btn-special {
+        background-color: $special;
+        &:active {
+            background-color: darken($special,4);
+        }
+    }
+
     &.btn-muted {
-    	-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-		box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-		background-color: #FFF;
-		border: 1px solid rgba(0, 0, 0, .25);
-		color: #404040;
-		&:hover {
-			border: 1px solid rgba(0, 0, 0, .35);
-		}
-		&:active {
-			background-color: rgba(0, 0, 0, .1);
-		}
+        -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+        background-color: #FFF;
+        border: 1px solid rgba(0, 0, 0, .25);
+        color: #404040;
+        &:hover {
+            border: 1px solid rgba(0, 0, 0, .35);
+        }
+        &:active {
+            background-color: rgba(0, 0, 0, .1);
+        }
     }
 
     &.btn-disabled {

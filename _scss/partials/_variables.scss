@@ -13,6 +13,7 @@ $sans-serif: 'Fractal', 'Helvetica Neue', helvertica, arial, sans-serif;
 $base-paragraph-color: #737373;
 
 //colors
-$primary: #006CCC;
-$secondary: #427fed;
-$support-color: #23BC3B;
+$primary: #006CCC; //blue
+$secondary: #427fed; //lighter blue
+$special: #23BC3B; //green
+$support-color: $special;

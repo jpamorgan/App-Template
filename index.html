@@ -73,23 +73,38 @@
                     <div class="inner">
                         <h1>Forms &amp; Buttons</h1>
                         <p>There are three button styles intended for use in the main body of the app. The main actions will use the default style and alternate/sub actions (like an 'edit' button) will use the muted style.</p>
+                        <h2>Small Buttons</h2>
                         <a href="#" class="btn"><i class="fa fa-flash"></i> Default</a>
                         <a href="#" class="btn btn-muted"><i class="fa fa-bell-slash-o"></i> Muted</a>
                         <a href="#" class="btn btn-disabled"><i class="fa fa-location-arrow"></i> Disabled</a>
+                        <h2>Large Buttons</h2>
+                        <a href="#" class="btn btn-lg"><i class="fa fa-flash"></i> Default</a>
+                        <a href="#" class="btn btn-muted btn-lg"><i class="fa fa-bell-slash-o"></i> Muted</a>
+                        <a href="#" class="btn btn-disabled btn-lg"><i class="fa fa-location-arrow"></i> Disabled</a>
                         <h2>Text Fields</h2>
                         <p class="helper">See how much storage space you're using. To see storage limits for a particular product, visit that product's help center.</p>
                         <div class="row">
                             <div class="col-6">
                                 <label for="name">Full Name</label>
-                                <input type="text" id="name" placeholder="Johnny Doe">
+                                <input type="text" id="name" placeholder="Johnny Doe" disabled>
                             </div>
                             <div class="col-6">
                                 <label for="email">Email</label>
                                 <input type="email" id="email" placeholder="johnny@doe.com">
                             </div>
                         </div>
-                        <a href="#" class="btn btn-muted">Edit</a>
+                        <a href="#" class="btn btn-muted">Enable</a>
                         <a href="#" class="btn pull-right"><i class="fa fa-location-arrow"></i> Start the Free Course</a>
+
+                        <label for="syncval">Sync Value</label>
+                        <div class="row">
+                            <div class="col-7">
+                                <input type="text" class="input-lg" id="syncval" placeholder="Sync Value">
+                            </div>
+                            <div class="col-5">
+                                <a href="#" class="btn btn-lg btn-block btn-special"><i class="fa fa-flash"></i> Sync</a>
+                            </div>
+                        </div>
                     </div>
                 </article>
                 <article class="block">
@@ -101,10 +116,10 @@
             </div>
         </div>
     </div>
-    <!--<div id="supportIcon">
+    <div id="supportIcon">
         <h3>Talk to Us</h3>
-    </div>-->
-    <div id="support">
+    </div>
+    <!--<div id="support">
         <div class="supportHeader">
             <h3><i class="fa fa-question-circle"></i> Talk to Us</h3>
             <span class="close"><i class="fa fa-chevron-down"></i></span>
@@ -123,7 +138,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 
 </body>
 </html>
