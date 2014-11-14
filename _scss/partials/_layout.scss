@@ -16,6 +16,14 @@ div[role="main"] {
      padding: 0 10px;
 }
 
+.center {
+     max-width: 600px;
+     margin: 0 auto;
+     &.mini {
+          max-width: 400px;
+     }
+}
+
 .row {
      //@include outer-container;
      @include clearfix;
