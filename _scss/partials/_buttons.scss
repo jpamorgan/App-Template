@@ -17,6 +17,7 @@
     font-size: 14px;
     font-weight: normal;
     font-family: $sans-serif;
+    cursor: pointer;
 
     i {
     	margin-right: 4px;
@@ -30,7 +31,6 @@
     &:hover {
     	color: white;
 		border: 1px solid rgba(0, 0, 0, .15);
-		cursor: hand;
     }
     &:active {
     	background-color: darken($secondary,4);
